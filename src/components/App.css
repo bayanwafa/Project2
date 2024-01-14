@@ -1,38 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6e538a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primitive-sentence {
+  margin: 140px;
+  color:chocolate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.activity-list {
+  margin: 15px;
+  padding: 7px;
+  border: black;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.activity-form {
+  margin-bottom: 20px;
+}
+
+.activity-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.activity-form input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.activity-form button {
+  background-color: #6e538a;
   color: white;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; 
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.activity-form button:hover {
+  background-color: #32184e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.activity-list ul {
+  margin-top: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-list li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.activity-list li:hover {
+  background-color: #d8cece;
 }
