@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/icon.jpg';
 
 function Header() {
     return (
         <header>
-            <h1>Health & Fitness Tracker</h1>
+            <div className="header-content">
+                <img src={logo} alt="Logo" />
+                <h1>Health & Fitness Tracker</h1>
+            </div>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/activity">Activity Log</Link>
