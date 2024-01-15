@@ -7,15 +7,12 @@ function Header() {
         <header>
             <div className="header-content">
                 <img src={logo} alt="Logo" />
-                <h1>Health & Fitness Tracker</h1>
+                <nav>
+                    <Link to="/">Home</Link>
+                    <Link to="/activity">Activity Log</Link>
+                    <Link to="">Progress Visualizer</Link>
+                </nav>
             </div>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/activity">Activity Log</Link>
-                <Link to="">Progress Visualizer</Link>
-                <Link to="">Nutrition Log</Link>
-                <Link to="">Nutrition Visualizer</Link>
-            </nav>
         </header>
     );
 }
