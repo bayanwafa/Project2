@@ -1,4 +1,4 @@
-#Fitness Tracker App
+# Fitness Tracker App
 
 ## Introduction
 
@@ -33,3 +33,8 @@ The project follows a modular structure to keep the codebase organized. Here's a
 
 - **Member 1**: [Bayan]
   - **Responsibility**: Activity Log feature
+
+
+## The link of the Fitness Tracker App
+
+https://bayanwafa.github.io/Project2/
