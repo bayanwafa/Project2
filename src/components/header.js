@@ -5,12 +5,12 @@ import logo from '../images/icon.jpg';
 function Header() {
     return (
         <header>
+            {/* Header content with logo and navigation */}
             <div className="header-content">
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" /> {/* Display the logo */}
                 <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/activity">Activity Log</Link>
-                    <Link to="">Progress Visualizer</Link>
+                    <Link to="/">Home</Link> {/* Link to the Home route */}
+                    <Link to="/activity">Activity Log</Link> {/* Link to the Activity Log route */}
                 </nav>
             </div>
         </header>
