@@ -3,9 +3,11 @@ import Axios from 'axios';
 import ActivityForm from './ActivityForm';
 import './App.css';
 
+// API endpoint for activities
 const url = 'https://658f6eaa2871a9866e7a7460.mockapi.io/activity';
 
 function ActivityList() {
+  // State to store the list of activities
   const [activities, setActivities] = useState([]);
 
   // Function to fetch all activities
@@ -28,7 +30,7 @@ function ActivityList() {
   const addActivity = (newActivity) => {
     Axios.post(url, newActivity)
       .then((response) => {
-        // Instead of calling getAll, update the state directly
+        // Update the state with the new activity
         setActivities([...activities, response.data]);
       })
       .catch((error) => {
@@ -44,6 +46,7 @@ function ActivityList() {
         <ActivityForm addActivity={addActivity} />
       </div>
       <ul>
+        {/* Display the list of activities */}
         {activities.map((activity) => (
           <li key={activity.id}>
             Date: {activity.date}, Duration: {activity.duration} mins, Intensity: {activity.intensity}, Calories: {activity.calories} cal

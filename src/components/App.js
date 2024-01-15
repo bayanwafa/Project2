@@ -9,11 +9,11 @@ function App() {
   return (
     <div>
       <Router>
-        <Header />
+        <Header /> {/* Render the Header component */}
         <Routes>
+          {/* Define routes for Home and ActivityList components */}
           <Route path="/" element={<Home />} />
           <Route path="/activity" element={<ActivityList />} />
-          
         </Routes>
       </Router>
     </div>
